@@ -11,54 +11,103 @@
 </head>
 
 <body>
-    <div class="header-div">
-        <header>
-            <img src="media/header_full.jpg" class="under">
-            <img src="media/jeremy_learned_header_text.png" class="over">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+    <header>
+        <img src="media/header_image.jpg" class="img-fluid">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-link nav-item active myLink"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-link nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-link nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-link nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
-            </nav>
-        </header>
-    </div>
-    <div class="main-content">
-        <article>
-            <h1>Boxes Within Boxes</h1>
-            <p>The most intimidating aspect of learning code is the number of things you need to know. Before starting anything it’s a
-            good idea to know what you’re getting into, even if you can’t have complete knowledge. Just getting the lay of the land
-            helps. With coding I’ve learned to look for boundaries within the larger confines of the term “coding”.</p>
-            <p>I’ve chosen to focus on front-end development to begin with. That meant becoming familiar with HTML and CSS, neither of
-            which are programming languages. HTML is the raw material from which the web is built. CSS dictates what that raw
-            material will look like. I find it helps to think of a house. HTML comprises the lumber, sheetrock, nails, screws,
-            pipes, wiring, etc. CSS is the blueprint and interior design which configures the raw materials into the finished house.</p>
-            <p>Like all analogies this one certainly has flaws, but it lays a foundation (no pun intended) for understanding how HTML
-            and CSS work and what can be expected of them. An idea within an idea that gave me a foothold in understanding and
-            working with CSS is that every HTML item is enclosed in a box. The easiest way to see this is by adding a border of 1
-            pixel (solid red is my go to) to every element on the page.
-            </p>
-            <p>* { 
-            <br>
-            border: 1px solid red
-            <br>
-            }
-            </p>
-            <p>If you’ve ever used invisible ink you know the feeling when you discover the hidden message on the blank page. That’s
-            how I feel when I add this tiny bit of CSS and refresh the page. I can see how the digital 2x4’s and copper pipes are
-            currently laid out and if they match the blueprint in my head for the page.</p>
-        </article>
-        <aside>
-            <h1>Other Endeavors</h1>
-            <p></p>
-            <ul>
-                <li><a href="http://www.isanything.com" target="blank">Is Anything Podcast</a></li>
-                <li><a href="http://www.belongingtogether.com" target="blank">Belonging Together</a></li>
-                <li><a href="https://twitter.com/JeremyUriz" target="blank">Twitter</a></li>
-            </ul>
-        </aside>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row justify-content-between">
+            <div class="col-sm-8">
+                <article>
+                    <h1>Boxes Within Boxes</h1>
+                    <p>The most intimidating aspect of learning code is the number of things you need to know. Before
+                        starting anything it’s a
+                        good idea to know what you’re getting into, even if you can’t have complete knowledge. Just
+                        getting the lay of the land
+                        helps. With coding I’ve learned to look for boundaries within the larger confines of the term
+                        “coding”.</p>
+                    <p>I’ve chosen to focus on front-end development to begin with. That meant becoming familiar with
+                        HTML and CSS, neither of
+                        which are programming languages. HTML is the raw material from which the web is built. CSS
+                        dictates what that raw
+                        material will look like. I find it helps to think of a house. HTML comprises the lumber,
+                        sheetrock, nails, screws,
+                        pipes, wiring, etc. CSS is the blueprint and interior design which configures the raw materials
+                        into the finished house.</p>
+                    <p>Like all analogies this one certainly has flaws, but it lays a foundation (no pun intended) for
+                        understanding how HTML
+                        and CSS work and what can be expected of them. An idea within an idea that gave me a foothold in
+                        understanding and
+                        working with CSS is that every HTML item is enclosed in a box. The easiest way to see this is by
+                        adding a border of 1
+                        pixel (solid red is my go to) to every element on the page.
+                    </p>
+                    <p>* {
+                        <br>
+                        border: 1px solid red
+                        <br>
+                        }
+                    </p>
+                    <p>If you’ve ever used invisible ink you know the feeling when you discover the hidden message on
+                        the blank page. That’s
+                        how I feel when I add this tiny bit of CSS and refresh the page. I can see how the digital 2x4’s
+                        and copper pipes are
+                        currently laid out and if they match the blueprint in my head for the page.</p>
+                </article>
+
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                        <li class="page-item"><a class="page-link" href="blog.html">Previous</a></li>
+                        <li class="page-item"><a class="page-link" href="2019123post.html">Next</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+            <aside>
+                <h1>Other Endeavors</h1>
+                <div class="card bg-light mb-3" style="width: 16rem;">
+                    <a href="http://www.isanything.com" target="blank"><img class="card-img-top"
+                            src="media/isanything_logo.jpg" alt="Is Anything logo"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Is Anything Podcast</h5>
+                        <p class="card-text">Conversations with Interesting People!</p>
+                    </div>
+                </div>
+                <div class="card bg-light mb-3" style="width: 16rem;">
+                    <a href=href="http://www.belongingtogether.com" target="blank"><img class="card-img-top"
+                            src="media/bt_logo.bmp" alt="Belonging Together logo"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Belonging Together Blog</h5>
+                        <p class="card-text">Adoption and Parenting</p>
+                    </div>
+                </div>
+                <div class="card bg-light mb-3" style="width: 16rem;">
+                    <a href="https://twitter.com/JeremyUriz" target="blank"><img class="card-img-top"
+                            src="media/twitter_logo.jpg" alt="Twitter logo"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Twitter</h5>
+                        <p class="card-text">Follow Me!</p>
+                    </div>
+                </div>
+            </aside>
+        </div>
     </div>
     <footer>
         &copy; 2019 Jeremy Uriz
